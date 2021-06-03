@@ -125,7 +125,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:background="@drawable/button_rounded"
-        android:onClick="btn_submit"
         android:text="submit"
         android:textSize="24sp" />
 

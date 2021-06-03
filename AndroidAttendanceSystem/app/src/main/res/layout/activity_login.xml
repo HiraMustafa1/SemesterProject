@@ -91,7 +91,6 @@
         android:layout_marginBottom="76dp"
         android:background="@drawable/button_rounded"
         android:text="Login"
-        android:onClick="btn_login"
         android:textSize="24sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"

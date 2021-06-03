@@ -15,7 +15,7 @@
         <activity android:name=".AttendancePerStudent" />
         <activity android:name=".ViewStudent" />
         <activity android:name=".AddStudent" />
-        <activity android:name=".Menu" />
+        <activity android:name=".MenuPage" />
         <activity android:name=".login" />
         <activity android:name=".MainActivity">
             <intent-filter>
