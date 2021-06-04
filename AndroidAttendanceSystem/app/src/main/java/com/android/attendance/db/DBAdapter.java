@@ -33,7 +33,7 @@ public class DBAdapter extends SQLiteOpenHelper {
     private static final String KEY_FACULTY_ID = "faculty_id";
     private static final String KEY_FACULTY_FIRST_NAME = "faculty_firstName";
     private static final String KEY_FACULTY_LAST_NAME = "faculty_LastName";
-    private static final String KEY_FACULTY_MO_NO = "faculty_mobilenumber";
+    private static final String KEY_FACULTY_MO_NO = "faculty_mobileNumber";
     private static final String KEY_FACULTY_ADDRESS = "faculty_address";
     private static final String KEY_FACULTY_USERNAME = "faculty_username";
     private static final String KEY_FACULTY_PASSWORD = "faculty_password";
@@ -41,7 +41,7 @@ public class DBAdapter extends SQLiteOpenHelper {
     private static final String KEY_STUDENT_ID = "student_id";
     private static final String KEY_STUDENT_FIRST_NAME = "student_firstName";
     private static final String KEY_STUDENT_LAST_NAME = "student_lastName";
-    private static final String KEY_STUDENT_MO_NO = "student_mobilenumber";
+    private static final String KEY_STUDENT_MO_NO = "student_mobileNumber";
     private static final String KEY_STUDENT_ADDRESS = "student_address";
     private static final String KEY_STUDENT_DEPARTMENT = "student_department";
     private static final String KEY_STUDENT_CLASS = "student_class";
@@ -173,7 +173,7 @@ public class DBAdapter extends SQLiteOpenHelper {
         }
     }
 
-    //facult crud
+    //faculty crud
     public void addFaculty(FacultyBean facultyBean) {
         SQLiteDatabase db = this.getWritableDatabase();
 

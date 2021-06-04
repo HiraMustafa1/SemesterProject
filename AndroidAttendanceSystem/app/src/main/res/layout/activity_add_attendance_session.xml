@@ -64,6 +64,50 @@
         android:layout_marginTop="2dp"
         />
 
+<EditText
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/DateEditText"
+    android:background="#ffffff"
+    android:ems="10"
+    android:layout_marginTop="5dp"
+    android:layout_toLeftOf="@+id/spinnerSE"
+    android:editable="false"
+    android:layout_alignTop="@+id/DateImageButton">
+    <requestFocus/>
+    </EditText>
+
+    <ImageButton
+        android:id="@+id/DateImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerSE"
+        android:layout_alignLeft="@+id/spinnerSE"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="22dp"
+        android:cropToPadding="true"
+        android:src="@drawable/calendar_icon" />
+
+    <Button
+        android:id="@+id/btnAddAttendance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_rounded"
+        android:onClick="btn_viewAttendance"
+        android:text="Add Attendance"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/viewTotalAttendance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button_rounded"
+        android:onClick="btn_viewAttendance"
+        android:text="View Total Attendance"
+        android:textSize="24sp" />
+
 
 
 </LinearLayout>
