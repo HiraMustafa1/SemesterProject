@@ -64,4 +64,18 @@ public class AddFaculty extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
+
+    public void btn_addFaculty(View view) {
+        btn_submit = (Button) findViewById(R.id.btnSubmit);
+        btn_submit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openNewActivity();
+            }
+        });
+    }
+    public void openNewActivity(){
+        Intent intent = new Intent(this,AssignFacultyID.class);
+        startActivity(intent);
+    }
 }
