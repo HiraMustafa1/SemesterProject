@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddAttendanceSession"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:background="@drawable/image1">
+
+    <Button
+        android:id="@+id/btnViewAttendance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_rounded"
+        android:onClick="btn_viewAttendance"
+        android:text="View Attendance"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Dept"
+        android:textSize="14sp"
+        android:textStyle="normal" />
+
+    <Spinner
+        android:id="@+id/spinnerDept"
+        android:layout_width="243dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="2dp"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Field"
+        android:textSize="14sp"
+        android:textStyle="normal" />
+
+    <Spinner
+        android:id="@+id/spinnerField"
+        android:layout_width="243dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="2dp"
+        />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Subject"
+        android:textSize="14sp"
+        android:textStyle="normal" />
+
+    <Spinner
+        android:id="@+id/spinnerSubject"
+        android:layout_width="243dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="2dp"
+        />
+
+<EditText
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/DateEditText"
+    android:background="#ffffff"
+    android:ems="10"
+    android:layout_marginTop="5dp"
+    android:layout_toLeftOf="@+id/spinnerSE"
+    android:editable="false"
+    android:layout_alignTop="@+id/DateImageButton">
+    <requestFocus/>
+    </EditText>
+
+    <ImageButton
+        android:id="@+id/DateImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerSE"
+        android:layout_alignLeft="@+id/spinnerSE"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="22dp"
+        android:cropToPadding="true"
+        android:src="@drawable/calendar_icon" />
+
+    <Button
+        android:id="@+id/btnAddAttendance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_rounded"
+        android:onClick="btn_viewAttendance"
+        android:text="Add Attendance"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/viewTotalAttendance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button_rounded"
+        android:onClick="btn_viewAttendance"
+        android:text="View Total Attendance"
+        android:textSize="24sp" />
+
+
+
+</LinearLayout>
