@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\786PCC\\OneDrive\\Desktop\\gitB\\SemesterProject\\Android-Attendance-App\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-eu\\values-eu.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\786PCC\\.gradle\\caches\\transforms-2\\files-2.1\\45642fd0a6138345441bf0a6b6a7b84e\\support-compat-26.1.0\\res\\values-eu\\values-eu.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        }
+    ]
+}
