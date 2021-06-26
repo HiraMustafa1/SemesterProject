@@ -4,34 +4,124 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/image1"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="182dp"
-        android:layout_height="62dp"
-        android:text="WELCOME!"
-        android:textSize="36sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="263dp"
-        android:layout_height="70dp"
-        android:background="@drawable/button_rounded"
-        android:onClick="start"
-        android:text="START"
-        android:textSize="30sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <EditText
+        android:id="@+id/teacherID"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Enter Teacher ID."
+        android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,NotSibling">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Enter Teacher Name"
+        app:layout_constraintBottom_toTopOf="@+id/deletebtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teacherID"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints,NotSibling,UnknownId" />
+
+    <Button
+        android:id="@+id/addbtn"
+        android:layout_width="140dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="add"
+        android:text="Add"
+        app:layout_constraintBottom_toTopOf="@+id/modifybtn"
+        app:layout_constraintEnd_toStartOf="@+id/deletebtn"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        tools:ignore="MissingConstraints,UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/deletebtn"
+        android:layout_width="140dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="delete"
+        android:text="Delete"
+        app:layout_constraintBottom_toTopOf="@+id/showbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/addbtn"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        tools:ignore="MissingConstraints,OnClick" />
+
+    <Button
+        android:id="@+id/viewbtn"
+        android:layout_width="140dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="16dp"
+        android:onClick="view"
+        android:text="View"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/viewallbtn"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/modifybtn"
+        app:layout_constraintVertical_bias="0.009"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/viewallbtn"
+        android:layout_width="140dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginRight="92dp"
+        android:onClick="viewall"
+        android:text="View all"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/viewbtn"
+        app:layout_constraintTop_toBottomOf="@+id/showbtn"
+        tools:ignore="MissingConstraints,OnClick" />
+
+    <Button
+        android:id="@+id/showbtn"
+        android:layout_width="140dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="56dp"
+        android:onClick="show"
+        android:text="Show"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/viewallbtn"
+        app:layout_constraintTop_toBottomOf="@+id/deletebtn" />
+
+    <Button
+        android:id="@+id/modifybtn"
+        android:layout_width="140dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="16dp"
+        android:onClick="modify"
+        android:text="Modify"
+        app:layout_constraintEnd_toStartOf="@+id/showbtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addbtn"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
